@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style-type: none;
+    scrollbar-width: thin;
+    /* background-image: url(https://webd-assignment-1.vercel.app/assets/images/background.svg); */
+}
+
+
+.nav-bar{
+    position: fixed;
+    height: 60px;
+    /* width: 58vw; */
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin-top: 15px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+#total{
+    padding: 10px;
+}
+
+.part-1{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    display: none;
+}
+
+.part-1 i{
+    color: red;
+    margin-right: 3px;
+}
+
+.part-1 h2{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.part-2 ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.part-2 ul li a{
+    color: black;
+    font-size: 18px;
+}
+
+.fa-fire{
+    font-size: 30px;
+}
+
+.btn{
+    padding: 11px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color:whitesmoke;
+    color: black;
+    transition: all ease 0.3s;
+}
+
+.btn:hover{
+    background-color:black;
+    color: white;
+}
+
+.side-bar{
+    height: 150px;
+    width: 100%;
+    z-index: 999;
+    background-color: whitesmoke;
+    background-color: white;
+    position: relative;
+    display: none;
+}
+
+.small-sidebar{
+    display: block;
+}
+
+.items{
+    margin-top: 10%;
+    margin-left: 10%;
+    padding:40px;
+}
+
+.items ul li a{
+    font-size: 30px;
+    color: black;
+}
+
+@media (max-width:780px) {
+    .nav-bar{
+        width: 90%;
+        margin: 0px 12px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px
+    }
+    .close{
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+}
+
+.main-content{
+    padding: 50px 0px 20px 40px;
+    display: flex;
+}
+
+.part11{
+    margin-top: 9%;
+}
+
+.part11 h1{
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+
+.part11 p{
+    font-size: 1.2vw;
+    text-align: justify;
+    padding: 8px;
+}
+
+span{
+    color: red;
+}
+
+.extra{
+    margin: 20px 20px 10px 120px;
+}
+
+button i{
+    margin: 0px 5px;
+}
+@media (max-width:780px) {
+    .main-content{
+        padding: 0;
+        margin-top: 80px;
+    }
+    .part22 img{
+        display: none;
+    }
+    .part11{
+        margin: 0 20px;
+    }
+    .part11 h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .part11 p{
+        font-size: 20px;
+        /* margin-right: 10px;s */
+        padding: 0;
+    }
+    .buttons .extra{
+        margin: 0;
+    }
+    .buttons .btn{
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .part11 img{
+        width: 95%;
+        margin-top: 20px;
+    }
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    margin: 0px 5%;
+    /* border: 1px solid black; */
+}
+
+.features img{
+    width: 50%;
+}
+
+.inside-main{
+    width: 50%;
+}
+
+.inside-main h2{
+    color: red;
+}
+
+.inside-main h1{
+    font-size: 3vw;
+}
+
+.containt{
+    margin: 15px 0px;
+}
+
+b{
+    font-size: 21px;
+    margin-left: 5px;
+}
+
+.containt p{
+    margin: 10px 0px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.fa-star{
+    color: white;
+    font-size: 23px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+@media (max-width:780px) {
+    .features img{
+        width: 100%;
+    }
+    .inside-main{
+        padding: 0 20px;
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+.advantages{
+    display: flex;
+    align-items: center;
+    margin: 0px 5%;
+    flex-wrap: wrap;
+}
+
+.advantages img{
+    width: 50%;
+}
+
+.fa-bell{
+    color: white;
+    font-size: 25px;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.tests{
+    text-align: center;
+}
+
+@media (max-width:780px) {
+    .advantages{
+        margin: 20px 5%;
+    }
+    .containt p{
+        padding: 0 15px;
+    }
+    .containt h3{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .advantages img{
+        width: 100%;
+    }
+    .fa-bell{
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+.reviews{
+    margin: 10px 20px;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+
+.reviews h1{
+    font-size: 3vw;
+    margin-left: 30.5%;
+    margin-bottom: 30px;
+}
+
+.cards{
+    height: auto;
+    width: 31%;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all ease 0.2s;
+}
+
+.cards:hover{
+    box-shadow: 0 0 5px black;
+}
+
+.red-color{
+    color: white;
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.white-color{
+    color: black;
+    background-color:whitesmoke;
+}
+
+.head-txt{
+    text-align: justify;
+}
+
+.cards-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.download{
+    height: 550px;
+    width: 100%;
+    border-radius: 5px;
+    background-image: url(https://webd-assignment-1.vercel.app/assets/images/getstartedbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.details{
+    margin-left: 10%;
+}
+
+.details h1{
+    font-size: 3vw;
+}
+
+.details h3{
+    font-size: 1.5vw;
+}
+
+.download img{
+    float: right;
+    margin-left: 10%;
+}
+
+.dwn{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width:780px) {
+   .cards{
+    width: 100%;
+   }
+   .reviews{
+    margin: 50px 0;
+   }
+   .reviews h1{
+    font-size: 33px;
+    margin: 10px 20px;
+   }
+   .download{
+    height: 300px;
+   }
+   .download img{
+    width: 50%;
+    margin: 0;
+   }
+}
+
+.fotter{
+    margin: 2% 10%;
+    margin-top: 6%;
+    border-bottom: 1px solid black;
+    width: 80%;
+    padding-bottom: 30px;
+}
+.ftr-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ftrprt-1 ul li i{
+    color: red;
+    font-size: 2vw;
+    margin-right: 5px;
+}
+
+.ftrprt-1 ul li{
+    font-size: 1.3vw;
+}
+
+
+.ftrprt-2 ul li a{
+    font-size: 1.2vw;
+    color: black;
+}
+
+.ftrprt-3 ul li a{
+    font-size: 1.2vw;
+    color: black;
+}
+
+.ftrprt-4 ul li a{
+    font-size: 1.2vw;
+    color: black;
+}
+
+.ftrprt-5 ul li a{
+    font-size: 1.2vw;
+    color: black;
+}
+
+.ftrprt-5 ul form{
+    margin: 5px;
+}
+
+.ftrprt-5 ul form input{
+    padding: 10px 4px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.ftrprt-5 ul form button{
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.footer-2{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+@media (max-width:780px) {
+    .ftrprt-1{
+        margin: 10px;
+    }
+    .ftrprt-2{
+        margin: 10px;
+    }
+    .ftrprt-3{
+        margin: 10px;
+    }
+    .ftrprt-4{
+        margin: 10px;
+    }
+    .ftrprt-5{
+        margin: 10px;
+    }
+
+    .ftrprt-1 ul li{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    .ftrprt-2 ul li a{
+        margin: 10px;
+        font-size: 18px;
+    }
+    .ftrprt-3 ul li a{
+        margin: 10px;
+        font-size: 18px;
+    }
+    
+    .ftrprt-4 ul li a{
+        margin: 10px;
+        font-size: 18px;
+    }
+    
+    .ftrprt-5 ul li a{
+        margin: 10px;
+        font-size: 18px;
+    }
+    .ftrprt-5 ul form input{
+        padding: 10px 4px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .ftrprt-5 ul form button{
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1400px) {
+    .part11 h1{
+        font-size: 7vw;
+    }
+    .part11 p{
+        font-size: 2.5vw;
+    }
+    .part11 img{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .part22 img{
+        display: none;
+    }
+    .advantages {
+        margin: 20px 5%;
+    }
+    .cards{
+        width: 100%;
+    }
+    .download img{
+        margin: 0;
+    }
+}
